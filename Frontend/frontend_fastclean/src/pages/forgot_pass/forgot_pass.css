@@ -1,0 +1,74 @@
+.displayInfo > .formFP {
+    margin-bottom: 17px;
+    margin-top: 35px;
+  }
+  
+  .input-groupFP {
+    margin-bottom: 26px;
+  }
+  .input-groupFP:nth-last-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+  .input-groupFP > label,
+  .input-groupFP > input {
+    font-family: 'Roboto', sans-serif;
+    max-width: 420px;
+    text-align: left;
+    width: 60%;
+    
+  }
+  .input-groupFP > label {
+    color: #000000;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  .input-groupFP > input {
+    background: #f2f2f5;
+    border-radius: 20px;
+    border: 1px solid #b3b3b3;
+    color: #000000;
+    font-size: 16px;
+    height: 40px;
+    outline: 0;
+    padding: 0 15px;
+    transition: all 0.3s;
+  }
+  .input-groupFP > input:focus {
+    background: #fff;
+    border-color: #c4c4c4;
+  }
+  .input-groupFP > input::placeholder {
+    color: #c4c4c4;
+    font-size: 16px;
+  }
+  
+  button {
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    max-width: 420px;
+    outline: 0;
+    padding: 10px 0;
+    width: 80%;
+    margin-top: 10px;
+  }
+  
+  button.primaryFP {
+    background-color: blue;
+    color: white;
+    margin-left: 0;
+  }
+  button.primaryFP:hover {
+    background-color: rgb(0, 0, 94);
+    font-size: large;
+  }
+  
+  hr{
+    border-color: rgb(46, 46, 255);
+  }
+  
+  

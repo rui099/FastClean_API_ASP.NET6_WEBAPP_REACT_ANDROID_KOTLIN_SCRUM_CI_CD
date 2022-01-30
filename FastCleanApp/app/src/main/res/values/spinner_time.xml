@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="time_array">
+        <item>Sem Filtro</item>
+        <item>15 Dias</item>
+        <item>1 Mês</item>
+        <item>3 Meses</item>
+        <item>6 Meses</item>
+    </string-array>
+</resources>

@@ -1,0 +1,26 @@
+.decricao{
+  max-width:  fit-content;
+  background-color: white;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  border: solid white;
+  margin-top: 100px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.tutorial {
+  font-weight: bolder;
+  color: blue;
+ }
+
+#left, #right { 
+  width: 40%; 
+  margin:5px; 
+  padding: 1em; 
+  background: white; 
+} 
+
+#left  { float:left;  }
+#right { float:right; } 
+
+.perfilInfo{text-align: center; padding-top: 30px}

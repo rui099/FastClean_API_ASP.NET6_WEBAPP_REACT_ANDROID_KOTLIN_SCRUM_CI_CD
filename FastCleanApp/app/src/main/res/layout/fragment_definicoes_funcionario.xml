@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="300dp"
+android:layout_marginTop="200sp"
+android:layout_marginHorizontal="20dp"
+android:gravity="center"
+android:orientation="vertical"
+tools:context=".Fragments.Perfil.DefinicoesFuncionarioFragment"
+android:background="@drawable/shape_rounded_fragment">
+
+<Button
+    android:id="@+id/bt_editar_user"
+    android:layout_width="300dp"
+    android:layout_height="90dp"
+    android:layout_marginBottom="40dp"
+    android:backgroundTint="#80d6ff"
+    android:text="Editar Perfil" />
+
+
+<Button
+    android:id="@+id/bt_logout"
+    android:layout_width="300dp"
+    android:layout_height="90dp"
+    android:backgroundTint="#80d6ff"
+    android:text="Logout" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Voltar"
+    android:id="@+id/btReturn"
+    android:backgroundTint="@color/white"
+    android:textColor="@color/black"
+    android:layout_marginTop="20dp"/>
+
+</LinearLayout>

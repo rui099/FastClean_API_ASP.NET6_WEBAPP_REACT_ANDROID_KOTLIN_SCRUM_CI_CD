@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:layout_marginTop="100dp"
+    android:layout_marginHorizontal="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/shape_rounded_fragment"
+    tools:context=".Fragments.RegisterClientFilesFragment">
+
+    <ImageButton
+        android:id="@+id/btReturn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginEnd="170dp"
+        android:src="@drawable/ic_arrow_back_black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_circle_image"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:backgroundTint="#e6e6e6"
+        android:layout_marginBottom="20dp">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="166dp"
+            android:layout_height="177dp"
+            android:src="@drawable/ic_perfil" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btPhoto"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:text="Foto"
+        android:backgroundTint="#009de6"
+        android:onClick="openFileDialog"/>
+
+    <Button
+        android:id="@+id/btBI"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#009de6"
+        android:text="Cartão de Cidadão"
+        android:onClick="openFileDialog"/>
+
+    <Button
+        android:id="@+id/btCrimeHistory"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:text="Cadastro"
+        android:backgroundTint="#009de6"
+        android:onClick="openFileDialog"/>
+
+    <Button
+        android:id="@+id/btRegister"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Registar"
+        android:backgroundTint="#80d6ff"/>
+
+
+
+</LinearLayout>

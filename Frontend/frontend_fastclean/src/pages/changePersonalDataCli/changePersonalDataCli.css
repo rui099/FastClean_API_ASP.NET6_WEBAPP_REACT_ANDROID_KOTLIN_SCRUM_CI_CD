@@ -1,0 +1,57 @@
+.editData2{
+    border-style: dashed; 
+    border-color: blue;
+    width: 500px;
+    height: max-content;
+    margin: auto;
+
+}
+
+.btnEditData2{
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    font-family: 'Times New Roman', Times, serif; 
+    margin-left: 5;
+}
+
+.btnEditData2:hover{
+    border-style: dotted;
+}
+
+.titulosCampos{
+    text-align: left;
+    margin-right: 10px;
+}
+
+#btnED2{
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    font-family: 'Times New Roman', Times, serif; 
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+#btnED2:hover{
+    border-style: dotted;
+}
+
+.editDataInput2{
+    width: 250px;
+    height: 35px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: blue;
+    padding-left: 10px;
+    justify-self: right;
+    margin: auto;
+    margin-bottom: 10px;
+
+}

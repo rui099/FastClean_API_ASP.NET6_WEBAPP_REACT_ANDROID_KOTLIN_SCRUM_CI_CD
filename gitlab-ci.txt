@@ -1,0 +1,39 @@
+image: mcr.microsoft.com/dotnet/sdk:6.0
+
+variables:
+ GIT_DEPTH: 10
+ GIT_SSL_NO_VERIFY: "true"
+ project: "FastClean/FastCleanAPI"
+
+stages:
+ - build
+ - test
+ - deploy
+ 
+job_build:
+ stage: build
+ tags:
+  - docker-runner
+ script:
+  - "cd $project"
+  - dotnet build
+ 
+job_test:
+ stage: test
+ tags:
+  - docker-runner
+ script:
+  - "cd $project"
+  - dotnet test
+  
+job_deploy:
+ stage: deploy
+ tags:
+  - docker-runner 
+ only:
+  - master
+ artifacts:
+  paths:
+   - publish/
+ script:
+  - dotnet publish -c Release -o ./publish FastClean/FastCleanAPI/FastCleanAPI.csproj

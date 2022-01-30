@@ -1,0 +1,32 @@
+.divUB{
+    width: 100%; 
+    overflow: hidden;
+    left: 50% ;
+    right: 50%;
+    text-align: center;
+  }
+
+  .lblUB{
+    margin-right: 10px;
+    
+  }
+
+  .anexosUB{
+    left: 50% ;
+    right: 50%;
+  }
+
+  .btnUB{
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    width: 200px;
+    height: max-content;
+    font-size: large;
+    margin-left: 5px;
+  }
+
+  .btnUB:hover{
+    background-color: rgb(0, 0, 143);
+    border-style: dotted;
+  }

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Marcar.EscolherTipoLimpezaFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Marcar"
+                android:textColor="@color/tintAccent"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="80dp"
+                android:layout_height="54dp"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="50dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="25dp"
+            android:background="@color/white"
+            >
+
+            <Switch
+                android:id="@+id/escolherMorada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:text="Escolher Morada"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/tintAccent"
+                android:background="@color/blueBlack"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="30dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/rua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="Rua"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/escolherMorada" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/numero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="Numero"
+                android:inputType="text"
+                android:paddingRight="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rua" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/codPostal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="Codigo-Postal"
+                android:inputType="textPostalAddress"
+                app:layout_constraintStart_toEndOf="@+id/numero"
+                app:layout_constraintTop_toBottomOf="@+id/rua" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/freguesia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="Freguesia"
+                android:inputType="text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/numero" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/concelho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="Concelho"
+                android:inputType="text"
+                android:paddingRight="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/freguesia" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/distrito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="Distrito"
+                android:inputType="text"
+                android:paddingRight="10dp"
+                app:layout_constraintStart_toEndOf="@+id/concelho"
+                app:layout_constraintTop_toBottomOf="@+id/freguesia" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="25dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="25dp"
+            android:background="@color/white">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/shape_rounded_form"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Tipo de Limpeza:"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="25dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="25dp">
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Profissional" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Normal" />
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="30dp"
+            android:paddingBottom="25dp"
+            android:background="@color/white">
+
+            <Button
+                android:id="@+id/proximo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proximo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</FrameLayout>

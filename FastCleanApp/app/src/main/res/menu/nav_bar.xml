@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <item
+        android:id="@+id/home"
+        android:title="home"
+        android:icon="@drawable/ic_home" />
+
+    <item
+        android:id="@+id/mensager"
+        android:title="mensager"
+        android:icon="@drawable/ic_mensager" />
+
+    <item
+        android:id="@+id/adjuster"
+        android:title=""
+        android:enabled="false" />
+
+    <item
+        android:id="@+id/marcacoes"
+        android:title="marcacoes"
+        android:icon="@drawable/ic_marcacoes" />
+
+    <item
+        android:id="@+id/perfil"
+        android:title="perfil"
+        android:icon="@drawable/ic_perfil" />
+
+
+</menu>

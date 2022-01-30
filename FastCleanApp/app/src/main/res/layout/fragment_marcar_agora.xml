@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fastclean.Fragments.Marcar.MarcarAgoraFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_rounded_fragment">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_rounded_form"
+                android:layout_marginHorizontal="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo de Imóvel:"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="5dp"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/TipoImovel">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Apartamento"
+                        android:id="@+id/radioApartamento"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Casa"
+                        android:id="@+id/radioCasa"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_rounded_form"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:text="Número de Quartos:"
+                        android:layout_marginHorizontal="5dp"/>
+                    <EditText
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/NumQuartos"
+                        android:inputType="number"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:text="Quartos de Banho:"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="5dp"/>
+                    <EditText
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/NumQuartosBanho"
+                        android:inputType="number"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:text="Numero de Horas Previstas:"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginRight="5dp"/>
+                    <EditText
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/hPrevistas"
+                        android:inputType="number"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:text="Cozinha:"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="5dp"/>
+                    <CheckBox
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cbCozinha"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:text="Sala:"
+                        android:layout_marginLeft="39dp"
+                        android:layout_marginRight="5dp"/>
+                    <CheckBox
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cbSala"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shape_rounded_form"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:text="Detalhes"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/etDesc"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:background="@color/white"/>
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agendar"
+                android:backgroundTint="#91b6f2"
+                android:layout_marginLeft="145dp"
+                android:layout_marginVertical="20dp"
+                android:id="@+id/btAgendar"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

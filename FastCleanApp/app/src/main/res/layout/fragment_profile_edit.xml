@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Perfil.ProfileEditFragment"
+    android:background="@drawable/shape_rounded_fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btReturn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginEnd="170dp"
+                    android:src="@drawable/ic_arrow_back_black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/shape_rounded_form"
+                    android:layout_marginBottom="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Alterar password"
+                        android:textSize="18dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"/>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:background="@android:color/transparent"
+                        app:boxBackgroundColor="@android:color/transparent"
+                        app:passwordToggleEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etOldPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Password Atual"
+                            android:inputType="textPassword"
+                            android:enabled="true"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:background="@android:color/transparent"
+                        app:boxBackgroundColor="@android:color/transparent"
+                        app:passwordToggleEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint=" Nova Password"
+                            android:inputType="textPassword"
+                            android:enabled="true"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@android:color/transparent"
+                        app:boxBackgroundColor="@android:color/transparent"
+                        app:passwordToggleEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etPasswordConfirm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Confirmar Nova Password"
+                            android:inputType="textPassword"
+                            android:enabled="true"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <Button
+                        android:id="@+id/btGuardarPass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#91b6f2"
+                        android:text="Guardar Password"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/shape_rounded_form"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Preencha com a sua morada"
+                        android:textSize="18dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        app:boxBackgroundColor="@android:color/transparent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etRua"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Rua"
+                            android:inputType="text"
+                            android:layout_marginBottom="10dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        app:boxBackgroundColor="@android:color/transparent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etNumero"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="numero"
+                            android:inputType="text"
+                            android:layout_marginBottom="10dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        app:boxBackgroundColor="@android:color/transparent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etPostal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Código Postal"
+                            android:inputType="textPostalAddress"
+                            android:layout_marginBottom="10dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        app:boxBackgroundColor="@android:color/transparent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etFreguesia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Freguesia"
+                            android:inputType="textPostalAddress"
+                            android:layout_marginBottom="10dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        app:boxBackgroundColor="@android:color/transparent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etConcelho"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Concelho"
+                            android:inputType="textPostalAddress"
+                            android:layout_marginBottom="10dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        app:boxBackgroundColor="@android:color/transparent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etDistrito"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Distrito"
+                            android:inputType="textPostalAddress"
+                            android:layout_marginBottom="10dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <Button
+                        android:id="@+id/btGuardarMorada"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#91b6f2"
+                        android:text="Guardar Morada"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/shape_rounded_form"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="Preencha com o seu Contacto"
+                        android:textSize="18dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        app:boxBackgroundColor="@android:color/transparent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etContacto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Contacto"
+                            android:inputType="text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/btGuardarContacto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#91b6f2"
+                        android:text="Guardar Contacto"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+  .bvindo{
+    text-align: center;
+    margin-top: 10%;
+  }
+  
+  .bvindo2{
+    text-align: center;
+  }
+  
+    image[id="imgbv"]{
+    border-radius: 40px;
+    width: 600px;
+    height: 400px;
+    margin-top: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: url('../../images/imgbv.jpg');
+    }
+  

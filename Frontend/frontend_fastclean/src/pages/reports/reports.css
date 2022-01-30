@@ -1,0 +1,66 @@
+.divPrim{
+  width: 100%; 
+  overflow: hidden;
+}
+
+.divSeg{
+   float: left;
+   margin-left: 20px;
+   width: 20%;
+   border: 2px solid blue;
+   border-radius: 20px;
+   word-wrap: break-word;
+}
+
+.divTer{
+  float: right;
+  margin-right: 20px;
+  width: 20%;
+  border: 2px solid rgb(0, 173, 179);
+  border-radius: 20px;
+  word-wrap: break-word;
+}
+
+.btnbanir{
+  background-color: rgb(255, 0, 0);
+  border-radius: 20px;
+  color: white;
+  width: 100px;
+}
+
+.btnvoltar{
+  background-color: blue;
+  border-radius: 20px;
+  color: white;
+  width: 100px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.btnbanir:hover{
+  font-size: large;
+}
+
+.btnvoltar:hover{
+  font-size: large;
+  color: white;
+}
+
+.btnarquivo{
+  background-color: green;
+  border-radius: 20px;
+  color: white;
+  width: 120px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.btnarquivo:hover{
+  background-color: rgb(0, 97, 0);
+}

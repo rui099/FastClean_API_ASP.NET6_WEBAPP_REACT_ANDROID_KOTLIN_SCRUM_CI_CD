@@ -1,0 +1,46 @@
+footer{
+	background-color: white;
+
+}
+
+.tituloFooter{
+	color: darkblue;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 30px;
+}
+
+.subtitulo{
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.titles > h4{
+	text-align: center;
+}
+
+h4 > a{
+	text-decoration: none;
+	color: blue;
+}
+
+.titles{
+	width: 19%;
+	display: inline-block;
+	margin-left: 10% ; 
+	justify-content: space-between;
+}
+
+.titles > .iconsRS{
+	margin-left: 30%;
+	display: inline;
+}
+
+.titles > .ico{
+	margin-left: 50%;
+}
+
+a:hover{
+	font-size: large;
+}

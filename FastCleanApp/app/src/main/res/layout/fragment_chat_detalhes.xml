@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Chat.ChatDetalhesFragment"
+    android:background="#afc6f0">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/otherName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/tintAccent"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/ic_baseline_report"
+                android:id="@+id/report"/>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blueBlack"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <!--            <com.google.android.material.button.MaterialButton-->
+
+            <!--                android:id="@+id/btn_bgm"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:backgroundTint="@color/blueBlack"-->
+            <!--                android:text="A Decorrer"-->
+            <!--                android:textColor="@color/tintAccent" />-->
+
+
+            <!--            <com.google.android.material.button.MaterialButton-->
+
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:backgroundTint="@color/blueBlack"-->
+            <!--                android:text="Terminada"-->
+            <!--                android:textColor="@color/tintAccent" />-->
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="80dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chat_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:hint="Escreva uma mensagem"
+            android:nestedScrollingEnabled="true"
+            android:maxLines="2"
+            android:background="@drawable/shape_rounded_fragment"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btSend"
+            android:layout_marginBottom="-10dp"
+            android:src="@drawable/ic_send_black"
+            android:background="@android:color/transparent"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</FrameLayout>

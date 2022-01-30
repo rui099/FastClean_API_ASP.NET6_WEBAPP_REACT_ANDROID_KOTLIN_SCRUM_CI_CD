@@ -1,0 +1,143 @@
+package com.example.fastclean.Fragments.Registo
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.Button
+import android.widget.EditText
+import android.widget.ImageButton
+import android.widget.Toast
+import com.example.fastclean.R
+
+// TODO: Rename parameter arguments, choose names that match
+// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+private const val ARG_PARAM1 = "param1"
+private const val ARG_PARAM2 = "param2"
+
+/**
+ * A simple [Fragment] subclass.
+ * Use the [RegisterWorkerFragment.newInstance] factory method to
+ * create an instance of this fragment.
+ */
+class RegisterWorkerFragment : Fragment(), View.OnClickListener {
+    // TODO: Rename and change types of parameters
+    private var param1: String? = null
+    private var param2: String? = null
+
+    private lateinit var name: EditText
+    private lateinit var email: EditText
+    private lateinit var phone: EditText
+    private lateinit var birthday: EditText
+    private lateinit var pass: EditText
+    private lateinit var cPass: EditText
+    private lateinit var address: EditText
+    private lateinit var city: EditText
+    private lateinit var postal: EditText
+
+    private lateinit var btnNext: Button
+    private lateinit var btnReturn: ImageButton
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        arguments?.let {
+            param1 = it.getString(ARG_PARAM1)
+            param2 = it.getString(ARG_PARAM2)
+        }
+    }
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        val view = inflater.inflate(R.layout.fragment_register_worker, container, false)
+
+        name = view.findViewById(R.id.etName)
+        email = view.findViewById(R.id.etEmail)
+        phone = view.findViewById(R.id.etPhone)
+        birthday = view.findViewById(R.id.etBirthday)
+        pass = view.findViewById(R.id.etPassword)
+        cPass = view.findViewById(R.id.etPasswordConfirm)
+        address = view.findViewById(R.id.etAddress)
+        city = view.findViewById(R.id.etCity)
+        postal = view.findViewById(R.id.etPostal)
+
+        btnNext = view.findViewById(R.id.btNext)
+        btnReturn = view.findViewById(R.id.btReturn)
+
+        btnNext.setOnClickListener(this)
+        btnReturn.setOnClickListener(this)
+
+        return view
+    }
+
+    companion object {
+        /**
+         * Use this factory method to create a new instance of
+         * this fragment using the provided parameters.
+         *
+         * @param param1 Parameter 1.
+         * @param param2 Parameter 2.
+         * @return A new instance of fragment RegisterWorkerFragment.
+         */
+        // TODO: Rename and change types and number of parameters
+        @JvmStatic
+        fun newInstance(param1: String, param2: String) =
+            RegisterWorkerFragment().apply {
+                arguments = Bundle().apply {
+                    putString(ARG_PARAM1, param1)
+                    putString(ARG_PARAM2, param2)
+                }
+            }
+    }
+
+    override fun onClick(v: View) {
+        if(v.id == R.id.btNext) {
+            if(name.text.isBlank()) {
+                Toast.makeText(activity, "Preencha o seu nome", Toast.LENGTH_SHORT).show()
+            } else if(email.text.isBlank()) {
+                Toast.makeText(activity, "Preencha o seu email", Toast.LENGTH_SHORT).show()
+                //} else if(!isValidEmail(email.text.toString())) {
+                //    Toast.makeText(activity, "Email invalido", Toast.LENGTH_SHORT).show()
+                //    email.setText("")
+            } else if(phone.text.isBlank()){
+                Toast.makeText(activity, "Preencha o número de telefone", Toast.LENGTH_SHORT).show()
+            } else if(birthday.text.isBlank()) {
+                Toast.makeText(activity, "Preencha a data de nascimento", Toast.LENGTH_SHORT).show()
+
+
+            } else if(pass.text.isBlank()){
+                Toast.makeText(activity, "Preencha a password", Toast.LENGTH_SHORT).show()
+            } else if(cPass.text.isBlank()){
+                Toast.makeText(activity, "Confirme a password", Toast.LENGTH_SHORT).show()
+            } else if(pass.text.toString() != cPass.text.toString()){
+                Toast.makeText(activity, "Passwords diferentes", Toast.LENGTH_SHORT).show()
+            } else if(address.text.isBlank()){
+                Toast.makeText(activity, "Preencha a morada", Toast.LENGTH_SHORT).show()
+            } else if(city.text.isBlank()){
+                Toast.makeText(activity, "Preencha a cidade", Toast.LENGTH_SHORT).show()
+            } else if(postal.text.isBlank()){
+                Toast.makeText(activity, "Preencha o código postal", Toast.LENGTH_SHORT).show()
+            } else {
+                val fragment = RegisterWorkerFilesFragment()
+                val fragmentManager = activity?.supportFragmentManager
+                val fragmentTransaction = fragmentManager?.beginTransaction()
+                fragmentTransaction?.replace(R.id.fragmentContainerView, fragment)
+                fragmentTransaction?.addToBackStack(null)
+                fragmentTransaction?.commit()
+            }
+        }
+
+        if (v.id == R.id.btReturn){
+            val fragment = RegisterChoiceFragment()
+            val fragmentManager = activity?.supportFragmentManager
+            val fragmentTransaction = fragmentManager?.beginTransaction()
+            fragmentTransaction?.replace(R.id.fragmentContainerView, fragment)
+            fragmentTransaction?.addToBackStack(null)
+            fragmentTransaction?.commit()
+        }
+    }
+}

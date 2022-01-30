@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:layout_marginTop="100dp"
+    android:layout_marginHorizontal="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/shape_rounded_fragment"
+    tools:context=".Fragments.LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="173dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginBottom="-40dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="FastClean"
+        android:textSize="40dp"
+        android:textColor="#0000FF"
+        android:layout_marginBottom="20dp"/>
+    <!--
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insira o seu email e password"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"/>
+    -->
+
+    <LinearLayout
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rounded_form"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D6EAF8"
+            app:boxBackgroundColor="#D6EAF8">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="12dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="20dp"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="12dp"
+            android:hint="Email"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:id="@+id/email"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="12dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:id="@+id/password"/>
+-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D6EAF8"
+            app:boxBackgroundColor="#D6EAF8"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="12dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="20dp"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="246dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#80d6ff"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/bt_registar"
+        android:layout_width="246dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Registar"
+        android:textColor="@color/black" />
+
+</LinearLayout>

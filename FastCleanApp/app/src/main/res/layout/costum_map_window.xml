@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_height="wrap_content">
+
+<TextView
+    android:id="@+id/txt_title"
+    android:layout_width="wrap_content"
+    android:textColor="@color/black"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:layout_height="wrap_content"
+    tools:text="Ola" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:numStars="5"
+        android:scaleX="1"
+        android:scaleY="1"
+        style="@android:style/Widget.DeviceDefault.RatingBar.Small"/>
+
+
+<TextView
+    android:id="@+id/txt_address"
+    android:layout_width="wrap_content"
+    android:textColor="@color/black"
+    android:textSize="16sp"
+    android:layout_height="wrap_content"
+    tools:text="Ola" />
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_directions_walk_24" />
+
+    <TextView
+        android:id="@+id/walk"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+ />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_baseline_directions_car_24" />
+
+        <TextView
+            android:id="@+id/car"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+ />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_baseline_directions_bike_24" />
+
+        <TextView
+            android:id="@+id/bike"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/preco"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        tools:text="Ola" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        tools:text="Ola" />
+</LinearLayout>
