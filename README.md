@@ -61,6 +61,7 @@ This project was built with:
 * SQL Server and SQL Server Management Studio
 * FireBase
 * GoogleMaps API
+* REST API
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
