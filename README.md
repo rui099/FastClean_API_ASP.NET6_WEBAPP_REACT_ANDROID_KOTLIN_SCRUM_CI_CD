@@ -56,12 +56,14 @@ The android application MAP is not working because is a paid API.
 This project was built with:
 
 * ASP.NET 6
+* Entity Framework
+* REST API
 * Android Studio and Kotlin
 * React
 * SQL Server and SQL Server Management Studio
 * FireBase
 * GoogleMaps API
-* REST API
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
